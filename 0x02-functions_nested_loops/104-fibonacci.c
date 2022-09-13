@@ -18,8 +18,8 @@ int main(void)
 	{
 		counter++;
 		printf("%.0f", c);
-		a = b;
-		b = c;
+		a = 1;
+		b = a + 1;
 		c = a + b;
 		if (counter < 98)
 		{
