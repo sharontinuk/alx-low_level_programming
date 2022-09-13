@@ -1,23 +1,39 @@
 #include "main.h"
+
 /**
- * jack_bauer - main thing
+ * times_table - times table function
  *
  */
-void jack_bauer(void)
+void times_table(void)
 {
 	int i;
 	int j;
 
-	for (i = 0; i <= 23; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 59; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(':');
-			_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			_putchar('\n');
+			int prod = j * i;
+
+			if (j == 0)
+			{
+				_putchar('0');
+			} else if (prod <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(prod + '0');
+			} else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(prod / 10 + '0');
+				_putchar(prod % 10 + '0');
+			}
 		}
+		_putchar('\n');
 	}
 }
+Footer
+© 2022 GitHu
