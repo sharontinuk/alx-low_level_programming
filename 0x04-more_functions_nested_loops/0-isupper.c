@@ -1,5 +1,3 @@
-@@ -1 +1,15 @@
-ghfhgghggjhg
 #include "main.h"
 /**
  * _isupper - checks if uppercase
