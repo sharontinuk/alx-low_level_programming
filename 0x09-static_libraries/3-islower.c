@@ -1,18 +1,19 @@
 #include "main.h"
+	
 	/**
-	 * _strlen - return the length of the string
-	 *@s: char type pointer
-	 *Return: length of string
-	 */
-	int _strlen(char *s)
+	*_islower - a function that checks for lowercase character
+	*@c: single letter input
+	*Return: 1 if int c is lowercase, 0 if otherwise
+	*/
+	
+	int _islower(int c)
 	{
-		int i, compt = 0;
-	
-		for (i = 0; s[i] != '\0'; i++)
+		if (c >= 'a' && c <= 'z')
 		{
-			compt++;
+			return (1);
 		}
-	
-		return (compt);
-	
+		else
+		{
+			return (0);
+		}
 	}
