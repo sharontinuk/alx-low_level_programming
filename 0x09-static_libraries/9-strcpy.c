@@ -19,8 +19,3 @@
 		*(dest + i) = '\0';
 		return (dest);
 	}
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
-    Term
