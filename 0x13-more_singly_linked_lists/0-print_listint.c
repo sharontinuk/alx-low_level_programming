@@ -1,12 +1,19 @@
-#include <stdio.h>
-
+#include "lists.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_listint - prints all the elements of a linked list
+ * @h: pointer to the 1st node of the linked list
+ * Return: number of nodes
  */
-int main(void)
+size_t print_listint(const listint_t *h)
 {
-	printf("Holberton SchoolGCC");
-	return (0);
+	size_t nodenum = 0;
+
+	while (h)
+	{
+		printf("%d\n", h->n);
+		nodenum++;
+		h = h->next;
+	}
+
+	return (nodenum);
 }
